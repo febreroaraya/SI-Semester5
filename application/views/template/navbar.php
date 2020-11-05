@@ -233,7 +233,7 @@
 
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="./">Beranda</a></li>
+              <li ><a href="<?= base_url('Landing') ?>">Beranda</a></li>
               <li><a href="<?= base_url('Store') ?>">Store</a></li>
               <li><a href="./contacts/">Kontak</a></li>
               <li class="dropdown">
