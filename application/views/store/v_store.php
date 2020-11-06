@@ -6,33 +6,30 @@
       <div class="container">
           <div class="btn-group pull-right sorting">
             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="ion-arrow-down-b"></i> Sorting by name
+              <i class="ion-arrow-down-b"></i> Sortir dengan
             </button>
 
             <ul class="dropdown-menu">
-              <li class="active"><a href="#"> <i class="ion-arrow-down-c"></i> Name [A-Z]</a></li>
-              <li><a href="#"> <i class="ion-arrow-up-c"></i> Name [Z-A]</a></li>
-              <li><a href="#"> <i class="ion-arrow-down-c"></i> Price [Low-High]</a></li>
-              <li><a href="#"> <i class="ion-arrow-up-c"></i> Price [High-Low]</a></li>
+              <li class="active"><a href="#"> <i class="ion-arrow-down-c"></i> Nama [A-Z]</a></li>
+              <li><a href="#"> <i class="ion-arrow-up-c"></i> Nama [Z-A]</a></li>
+              <li><a href="#"> <i class="ion-arrow-down-c"></i> Harga [Rendah-Tinggi]</a></li>
+              <li><a href="#"> <i class="ion-arrow-up-c"></i> Harga [Tinggi-Rendah]</a></li>
             </ul>
           </div>
 
-          <p>Search by tags</p>
+          <p>Cari berdasarkan tag</p>
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default btn-sm active">
-              <input type="radio" name="options" id="option1" checked> All products
+              <input type="radio" name="options" id="option1" checked> Semua Produk
             </label>
             <label class="btn btn-default btn-sm">
-              <input type="radio" name="options" id="option2"> Desktops
+              <input type="radio" name="options" id="option2"> Kaos
             </label>
             <label class="btn btn-default btn-sm">
-              <input type="radio" name="options" id="option3"> Laptops
+              <input type="radio" name="options" id="option3"> Kemeja
             </label>
             <label class="btn btn-default btn-sm">
-              <input type="radio" name="options" id="option4"> Tablets
-            </label>
-            <label class="btn btn-default btn-sm">
-              <input type="radio" name="options" id="option5"> Hybrids
+              <input type="radio" name="options" id="option4"> Jaket
             </label>
           </div>
       </div>
@@ -47,33 +44,27 @@
           <div class="filter">
             <div class="item">
                 <div class="title">
-                    <a href="#clear" data-action="open" class="down"> <i class="ion-android-arrow-dropdown"></i> Open</a>
-                    <a href="#clear" data-action="clear"> <i class="ion-ios-trash-outline"></i> Clear</a>
-                    <h1 class="h4">Type</h1>
+                    <a href="#clear" data-action="open" class="down"> <i class="ion-android-arrow-dropdown"></i> Buka</a>
+                    <a href="#clear" data-action="clear"> <i class="ion-ios-trash-outline"></i> Hapus</a>
+                    <h1 class="h4">Kategori</h1>
                 </div>
 
                 <div class="controls">
                   <div class="checkbox-group" data-status="inactive">
                       <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="Desktops">Desktops</div>
+                      <div class="label" data-value="Desktops">Kaos</div>
                       <input type="checkbox" name="checkbox" value="">
                   </div>
 
                   <div class="checkbox-group" data-status="inactive">
                       <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="Laptops">Laptops</div>
+                      <div class="label" data-value="Laptops">Kemeja</div>
                       <input type="checkbox" name="checkbox" value="">
                   </div>
 
                   <div class="checkbox-group" data-status="inactive">
                       <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="Tablets">Tablets</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Hybrid">Hybrids</div>
+                      <div class="label" data-value="Tablets">Jaket</div>
                       <input type="checkbox" name="checkbox" value="">
                   </div>
                 </div>
@@ -81,126 +72,10 @@
 
             <br>
 
-            <div class="item">
-                <div class="title">
-                    <a href="#clear" data-action="open" class="down"> <i class="ion-android-arrow-dropdown"></i> Open</a>
-                    <a href="#clear" data-action="clear"> <i class="ion-ios-trash-outline"></i> Clear</a>
-                    <h1 class="h4">Screen</h1>
-                </div>
-
-                <div class="controls grid">
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="7 in">7 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="10 in">10 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="11 in">11 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="14 in">14 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="15 in">15 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="17 in">17 in</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="item">
-              <div class="title">
-                  <a href="#clear" data-action="open" class="down"> <i class="ion-android-arrow-dropdown"></i> Open</a>
-                  <a href="#clear" data-action="clear-price"> <i class="ion-ios-trash-outline"></i> Clear</a>
-                  <h1 class="h4">Price</h1>
-              </div>
-
-              <div class="controls">
-                  <br>
-                  <div id="slider-price"></div>
-                  <br>
-                  <p id="amount"></p>
-              </div>
-            </div>
-            <br>
+            
 
             <div class="item lite">
-                <div class="title">
-                    <a href="#clear" data-action="open" class="down"> <i class="ion-android-arrow-dropdown"></i> Open</a>
-                    <a href="#clear" data-action="clear"> <i class="ion-ios-trash-outline"></i> Clear</a>
-                    <h1 class="h4">Manufacturer</h1>
-                </div>
-
-                <div class="controls">
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="Hp">Hp</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                      <div class="label" data-value="ASUS">ASUS</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Acer">Acer</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Dell">Dell</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Sony">Sony</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Apple">Apple</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Lenovo">Lenovo</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-
-                  <div class="checkbox-group" data-status="inactive">
-                      <div class="checkbox"><i class="ion-android-done"></i></div>
-                       <div class="label" data-value="Microsoft">Microsoft</div>
-                      <input type="checkbox" name="checkbox" value="">
-                  </div>
-                </div>
+                
             </div>
           </div>
         </div>
