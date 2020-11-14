@@ -23,10 +23,10 @@
                     <h1 class="h3 colorful blue hidden-xs">Provide lightweight and powerull</h1>
 
                     <hr class="offset-sm">
-                    <h2 class="h1 lg upp colorful blue">New amazing <br> laptops</h2>
+                    <h2 class="h1 lg upp colorful blue">New brand</h2>
                     <hr class="offset-md">
                     <hr class="offset-md">
-                    <a href="./store/" rel="nofollow" class="btn btn-primary btn-lg black"> More laptops </a>
+                    <a href="./store/" rel="nofollow" class="btn btn-primary btn-lg black"> Lainnya</a>
 
                   </div>
                 </div>
