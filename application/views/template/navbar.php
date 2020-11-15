@@ -211,8 +211,13 @@
 
 
     <div class="toplinks">
-      <a href="#signin" data-toggle="modal" data-target="#Modal-Registration"> <i class="ion-person"></i> Daftar</a>
+    <?php if ($this->session->userdata('status') == "login") { ?>
+      <a href="<?= base_url('Logout') ?>" ><i class="ion-locked"></i> Logout</a>
+      <a ><i class="ion-person"></i> Hi, <?= $this->session->userdata('namauser') ?></a>
+    <?php }else{ ?>
+        <a href="#signin" data-toggle="modal" data-target="#Modal-Registration"> <i class="ion-person"></i> Daftar</a>
       <a href="#signin" data-toggle="modal" data-target="#Modal-SignIn"> <i class="ion-unlocked"></i> Masuk</a>
+      <?php } ?>
       <a href="./favorites/"> <i class="ion-ios-heart"></i> Favorit </a>
       <a href="tel:+80005554465" class="hidden-xs"> <i class="ion-android-call"></i> 8000 555-44-65 </a>
     </div>
@@ -233,8 +238,8 @@
 
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li ><a href="<?= base_url('Landing') ?>">Beranda</a></li>
-              <li><a href="<?= base_url('Store') ?>">Store</a></li>
+              <li ><a href="<?= base_url('Store') ?>">Beranda</a></li>
+              <li><a href="<?= base_url('Store/daftarproduk') ?>">Store</a></li>
               <li><a href="./contacts/">Kontak</a></li>
               <li class="dropdown">
                 <a href="./store/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -260,3 +265,4 @@
           </div>
         </div><!--/.container-fluid -->
     </nav>
+   

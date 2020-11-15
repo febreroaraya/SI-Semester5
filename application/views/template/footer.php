@@ -150,14 +150,13 @@
                 <div class="col-sm-6 col-sm-offset-3">
                   <h2 class="modal-title text-center">Masuk</h2>
                   <br>
-
-                  <form class="signin" action="index.php" method="post">
+                  <form class="join" action="<?= base_url('Login/aksi_login') ?>" method="post" enctype="multipart/form-data">
                     <input type="email" name="email" value="" placeholder="E-mail" required="" class="form-control" />
                     <br>
                     <input type="password" name="password" value="" placeholder="Password" required="" class="form-control" />
                     <br>
 
-                    <button type="submit" class="btn btn-primary">Ok</button>
+                    <button type="submit" class="btn btn-primary">Login</button>
                     <a href="#forgin-password" data-action="Forgot-Password">Lupa Password ></a>
                   </form>
                   <br>
@@ -192,22 +191,34 @@
                   <h2 class="modal-title text-center">Daftar</h2>
                   <br>
 
-                  <form class="join" action="index.php" method="post">
+                  <form class="join" action="<?= base_url('Login/register') ?>" method="post" enctype="multipart/form-data">
                     <input type="text" name="name" value="" placeholder="Nama" required="" class="form-control" />
                     <br>
 
                     <input type="email" name="email" value="" placeholder="E-mail" required="" class="form-control" />
                     <br>
-
+                    
                     <input type="password" name="password" value="" placeholder="Password" required="" class="form-control" />
                     <br>
 
-                    <input type="text" name="confirm" value="" placeholder="Konfirmasi Password" required="" class="form-control" />
+                    <input type="text" name="no_tlp" value="" placeholder="No.Tlp" required="" class="form-control" />
                     <br>
 
-                    <button type="submit" class="btn btn-primary btn-sm">Ok</button> &nbsp;&nbsp;
-    
+                    
+                    <select name="jk" id="" class="form-control">
+                      <option value="laki-laki">Laki-Laki</option>
+                      <option value="perempuan">Perempuan</option>
+                    </select>
+                    <br>
+                    
+                    <input type="text" name="alamat"  placeholder="Alamat" required="" class="form-control" />
+                    <br>
 
+                    <input type="text" name="kodepos"  placeholder="Kode Pos" required="" class="form-control" />
+                    <br>
+
+                    <button type="submit" class="btn btn-primary btn-sm">Daftar</button> &nbsp;&nbsp;
+    
                     <br><br>
                     <p>
                       By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
@@ -282,6 +293,7 @@
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/core.js"></script>
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/store.js"></script>
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/carousel.js"></script>
+    <script  src="<?= base_url(); ?>assets/frontend/js/carousel-product.js"></script>
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/jquery.touchSwipe.min.js"></script>
 
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/custom-scroll/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -290,5 +302,9 @@
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/jquery-ui-1.11.4.js"></script>
     <script type="text/javascript" src="<?= base_url(); ?>assets/frontend/js/jquery.ui.touch-punch.js"></script>
 
+    <script type="text/javascript">
+      $(document).ready(function(){
+      });
+    </script>
   </body>
 </html>

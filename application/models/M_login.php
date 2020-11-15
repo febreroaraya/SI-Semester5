@@ -14,8 +14,8 @@ class M_login extends CI_Model{
 		$query = $this->db->query("SELECT * FROM user WHERE email='$username'");
 		return $query->result();
 	}
-	function iduser2($username){
-		$query = $this->db->query("SELECT * FROM kostumer WHERE email='$username'");
+	function iduser2($email){
+		$query = $this->db->query("SELECT * FROM costumer WHERE email='$email'");
 		return $query->result();
 	}
 	function hapusanorderlama(){

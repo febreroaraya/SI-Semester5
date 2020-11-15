@@ -16,6 +16,7 @@
     <link href="<?= base_url(); ?>assets/frontend/css/bootstrap.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/frontend/css/custom.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/frontend/css/carousel.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/frontend/css/carousel-product.css" rel="stylesheet">
     <link href="<?= base_url(); ?>assets/frontend/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100,300' rel='stylesheet' type='text/css'>

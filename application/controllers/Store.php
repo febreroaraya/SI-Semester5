@@ -22,10 +22,21 @@ class Store extends CI_Controller{
     public function index() {
         
 		
-		// $data['produk'] = $this->M_produk->tampil_produk3();
-		// $data['produk2'] = $this->M_produk->tampil_produk4();
-		// $data['produk3'] = $this->M_produk->tampil_produk5();
-        $this->load->view('store/v_store');
+        $this->load->view('store/v_landing');
+	}
+	public function daftarproduk(){
+		$this->load->view('store/v_store');
+	}
+
+
+	public function detailproduk(){
+		$this->load->view('store/v_detailproduk');
+	}
+	public function detailkeranjang(){
+		$this->load->view('store/v_detailproduk');
+	}
+	public function checkout(){
+		$this->load->view('store/v_checkout');
 	}
 	
 	

@@ -20,8 +20,6 @@ class Landing extends CI_Controller{
 
 
     public function index() {
-        
-		
 		// $data['produk'] = $this->M_produk->tampil_produk3();
 		// $data['produk2'] = $this->M_produk->tampil_produk4();
 		// $data['produk3'] = $this->M_produk->tampil_produk5();
