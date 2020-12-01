@@ -97,14 +97,13 @@
         <h1 class="h4">Alamat Store</h1>
 
         <address>
-          1305 Market Street, Suite 800<br>
-          San Francisco, CA 94102<br>
-          <abbr title="Phone">P:</abbr> (123) 456-7890
+          kunungan, jakarta selatan<br>
+          <abbr title="Phone"></abbr> (082) 230499700
         </address>
 
         <address>
-          <strong>Support</strong><br>
-          <a href="mailto:#">sup@example.com</a>
+          <strong>Email</strong><br>
+          <a href="mailto:#">faiel0987@gmail.com</a>
         </address>
 
       </div>
