@@ -43,25 +43,10 @@
                   </div>
 
                   <div class="row group">
-                    <div class="col-sm-4"><h4 class="h4">Pilih Negars</h4></div>
+                    <div class="col-sm-4"><h4 class="h4">Alamat</h4></div>
                     <div class="col-sm-8">
-                    <h4>Americano</h4>
+                    <h4>jbr</h4>
 
-                    </div>
-                  </div>
-
-                  <br><br>
-                  <div class="">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <h2 class="h4">Kota</h2>
-
-                        <h4>Los Angeles</h4>
-                      </div>
-                      <div class="col-sm-4">
-                        <h2 class="h4">Jalan</h2>
-
-                      <h4>Jl.Karitin</h4>
                     </div>
                   </div>
                   <br>
@@ -70,11 +55,6 @@
                     <div class="col-sm-8">
                       Cash On Delivery
                     </div>
-                  </div>
-
-                  <div class="row group">
-                    <div class="col-sm-4"><h2 class="h4">Kode Promo</h2></div>
-                    <div class="col-sm-8"> Kunam</div>
                   </div>
 
 
