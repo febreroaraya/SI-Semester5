@@ -2,7 +2,7 @@
 
   <div class="cart" data-toggle="inactive">
     <div class="label">
-      <i class="ion-bag"></i> 7
+      <i class="ion-bag"></i>
     </div>
 
     <div class="overlay"></div>
@@ -12,7 +12,6 @@
         <button type="button" class="close"><i class="ion-android-close"></i></button>
         <h4>Shopping cart</h4>
       </div>
-
       <div class="content">
 
         <div class="media">
@@ -35,7 +34,9 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -61,7 +62,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -87,7 +89,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -113,7 +116,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -122,7 +126,7 @@
         <div class="media">
           <div class="media-left">
             <a href="#">
-              <img class="media-object" src="<?= base_url(); ?>assets/frontend/img/products/lenovo-yoga.jpg" alt="Lenovo Yoga" />
+              <img class="media-object" src="<?= base_url(); ?>assets/frontend/img/products/lenovo-yoga.jpg" alt="Len" />
             </a>
           </div>
           <div class="media-body">
@@ -139,7 +143,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -165,7 +170,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
@@ -191,7 +197,8 @@
               <span class="input-group-btn">
                 <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
               </span>
-            </div><!-- /input-group -->
+            </div>
+            <!-- /input-group -->
 
             <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
           </div>
