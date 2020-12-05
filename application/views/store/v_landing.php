@@ -271,9 +271,9 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/6.jpg" alt="Surface Pro" /></a>
 
           <div class="content align-center">
-            <p class="sale">$2099.99</p>
-            <p class="price through">$2499.99</p>
-            <h2 class="h3">Microsoft Surface Pro</h2>
+            <p class="sale">Rp 200.000</p>
+            <p class="price through">Rp 200.000</p>
+            <h2 class="h3">kemeja</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
@@ -288,8 +288,8 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/7.jpg" alt="HP Spectre x360" /></a>
 
           <div class="content align-center">
-            <p class="price">$2994.99</p>
-            <h2 class="h3">HP Spectre x360</h2>
+            <p class="price">Rp 200.000</p>
+            <h2 class="h3">kemeja</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
@@ -304,8 +304,8 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/dell-inspiron-2in1.jpg" alt="Dell Inspiron 7000 2-in-1s" /></a>
 
           <div class="content align-center">
-            <p class="price">$1994.99</p>
-            <h2 class="h3">Dell Inspiron 7000</h2>
+            <p class="price">Rp 200.000</p>
+            <h2 class="h3">kemeja</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
@@ -339,8 +339,8 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/8.jpg" alt="Xiamomi Mi Pad 2" /></a>
 
           <div class="content align-center">
-            <p class="price">$899.99</p>
-            <h2 class="h3">Mi Pad 2</h2>
+            <p class="price">Rp 240.000</p>
+            <h2 class="h3">jaket</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
@@ -355,8 +355,8 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/9.jpg" alt="Apple iPad Air" /></a>
 
           <div class="content align-center">
-            <p class="price">$1099.99</p>
-            <h2 class="h3">Apple iPad Air</h2>
+            <p class="price">Rp 250.000</p>
+            <h2 class="h3">jaket</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
@@ -371,8 +371,8 @@
           <a href="./"><img src="<?= base_url(); ?>assets/frontend/img/products/10.jpg" alt="Asus Transformer" /></a>
 
           <div class="content align-center">
-            <p class="price">$987.99</p>
-            <h2 class="h3">Asus Transformer</h2>
+            <p class="price">Rp 260.000</p>
+            <h2 class="h3">jaket</h2>
             <hr class="offset-sm">
 
             <button class="btn btn-link"> <i class="ion-android-open"></i> Details</button>
