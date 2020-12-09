@@ -26,7 +26,6 @@
                 <h2 class="h1 lg upp colorful blue">New brand</h2>
                 <hr class="offset-md">
                 <hr class="offset-md">
-                <a href="./store/" rel="nofollow" class="btn btn-primary btn-lg black"> Lainnya</a>
 
               </div>
             </div>
@@ -52,7 +51,6 @@
                 <h2 class="h1 lg upp colorful blue">ERIGO <br> aparel</h2>
                 <hr class="offset-md">
                 <hr class="offset-md">
-                <a href="./store/" rel="nofollow" class="btn btn-primary btn-lg black"> View products </a>
 
               </div>
             </div>
@@ -78,7 +76,6 @@
                 <h2 class="h1 lg upp colorful blue">Brand new day <br class="hidden-xs"> NEW KEMEJA</h2>
                 <hr class="offset-md">
                 <hr class="offset-md">
-                <a href="./blog/" rel="nofollow" class="btn btn-primary btn-lg black"> View article </a>
 
               </div>
             </div>
