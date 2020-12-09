@@ -11,7 +11,7 @@
 
 
       <div class="item center" data-marker="1">
-        <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-2.jpg" alt="Background" class="background hidden-xs hidden-sm" />
+        <img src="<?= base_url(); ?>assets/frontend/img/carousel/1.jpg" alt="Background" class="background hidden-xs hidden-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-2-sm.jpg" alt="Background" class="background visible-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-2-xs.jpg" alt="Background" class="background visible-xs" />
 
@@ -20,7 +20,7 @@
             <div class="inside-content">
               <div class="container align-right">
 
-                <h1 class="h3 colorful blue hidden-xs">Provide lightweight and powerull</h1>
+                <h1 class="h3 colorful blue hidden-xs">Erigo hodie</h1>
 
                 <hr class="offset-sm">
                 <h2 class="h1 lg upp colorful blue">New brand</h2>
@@ -35,7 +35,7 @@
       </div>
 
       <div class="item" data-marker="2">
-        <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-1.jpg" alt="Background" class="background hidden-xs hidden-sm" />
+        <img src="<?= base_url(); ?>assets/frontend/img/carousel/2.jpg" alt="Background" class="background hidden-xs hidden-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-1-sm.jpg" alt="Background" class="background visible-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-1-xs.jpg" alt="Background" class="background visible-xs" />
 
@@ -46,10 +46,10 @@
             <div class="inside-content">
               <div class="container">
 
-                <h1 class="h3 colorful blue hidden-xs">Device is designed for the creative people</h1>
+                <h1 class="h3 colorful blue hidden-xs">NEW BRAND</h1>
                 <hr class="offset-sm">
 
-                <h2 class="h1 lg upp colorful blue">Apple <br> iMac 27 Retina</h2>
+                <h2 class="h1 lg upp colorful blue">ERIGO <br> aparel</h2>
                 <hr class="offset-md">
                 <hr class="offset-md">
                 <a href="./store/" rel="nofollow" class="btn btn-primary btn-lg black"> View products </a>
@@ -61,7 +61,7 @@
       </div>
 
       <div class="item" data-marker="3">
-        <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-3.jpg" alt="Background" class="background hidden-xs hidden-sm" />
+        <img src="<?= base_url(); ?>assets/frontend/img/carousel/3.jpg" alt="Background" class="background hidden-xs hidden-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-3-sm.jpg" alt="Background" class="background visible-sm" />
         <img src="<?= base_url(); ?>assets/frontend/img/carousel/bckg-3-xs.jpg" alt="Background" class="background visible-xs" />
 
@@ -72,10 +72,10 @@
             <div class="inside-content">
               <div class="container align-right">
 
-                <h1 class="h3 colorful blue hidden-xs">Luxury watches, business tablets and 3D touch: <br> new barand</h1>
+                <h1 class="h3 colorful blue hidden-xs"> <br> NEW BRAND</h1>
 
                 <hr class="offset-sm">
-                <h2 class="h1 lg upp colorful blue">Brand new day <br class="hidden-xs"> for business</h2>
+                <h2 class="h1 lg upp colorful blue">Brand new day <br class="hidden-xs"> NEW KEMEJA</h2>
                 <hr class="offset-md">
                 <hr class="offset-md">
                 <a href="./blog/" rel="nofollow" class="btn btn-primary btn-lg black"> View article </a>
