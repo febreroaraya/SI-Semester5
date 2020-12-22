@@ -59,7 +59,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../SI-Semester5/login/login.php"> <i class="ion-android-person"></i> Login </a></li>
-              <li><a href="../SI-Semester5/signup/signup.html"> Sign Up</a></li>
+              <li><a href="../SI-Semester5/signup/signup.php"> Sign Up</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -70,7 +70,7 @@
 
         <div class="items">
           <div class="item" data-marker="1">
-            <img src="../SI-Semester5/assets/img/carousel/Background2.jpg" alt="Background" class="background"/>
+            <img src="../SI-Semester5/assets/img/carousel/4.jpg" alt="Background" class="background"/>
 
             <div class="content">
               <div class="outside-content">
@@ -91,7 +91,7 @@
             </div>
           </div>
           <div class="item active" data-marker="2">
-            <img src="../SI-Semester5/assets/img/carousel/Background1.jpg" alt="Background" class="background"/>
+            <img src="../SI-Semester5/assets/img/carousel/3.jpg" alt="Background" class="background"/>
 
             <div class="content">
               <div class="outside-content">
@@ -112,7 +112,7 @@
             </div>
           </div>
           <div class="item" data-marker="3">
-            <img src="../SI-Semester5/assets/img/carousel/Background1.jpg" alt="Background" class="background"/>
+            <img src="../SI-Semester5/assets/img/carousel/1.jpg" alt="Background" class="background"/>
 
             <div class="content">
               <div class="outside-content">
