@@ -71,15 +71,15 @@
           <h1 class="align-center">LOGIN</h1>
           <br>
 
-          <form class="signin" action="index.php" method="post">
-            <input type="email" name="email" value="" placeholder="E-mail" required="" class="form-control" />
-            <br>
-            <input type="password" name="password" value="" placeholder="Password" required="" class="form-control" />
-            <br>
-
-            <button type="submit" class="btn btn-primary">Masuk</button>
-            <br><br>
-
+          <form action="controller_login.php" method="post">
+ 
+                <table class="table table-bordered">
+                    <tr><td>USERNAME</td><td> <input type="text" name="username" placeholder="username" class="form-control"></td></tr>
+                    <tr><td>PASSWORD</td><td><input type="password" name="password" placeholder="password" class="form-control"></td></tr>
+                    <tr><td></td><td> <button type="submit" class="btn btn-danger">login</button></td></tr>
+                </table>
+ 
+            </form>
             <p>
               Belum memiliki akun ? Daftar sekarang ! <a href="../signup/"> Registrasi > </a>
             </p>
@@ -145,7 +145,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../assets/js/jquery-latest.min.js"></script>
     
