@@ -60,6 +60,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="../SI-Semester5/login/login.php"> <i class="ion-android-person"></i> Login </a></li>
               <li><a href="../SI-Semester5/signup/signup.php"> Sign Up</a></li>
+              <li><a href="../SI-Semester5/admin/login.html"> Admin</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

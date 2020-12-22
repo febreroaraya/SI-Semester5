@@ -56,8 +56,8 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="../login/index.html"> <i class="ion-android-person"></i> Login </a></li>
-              <li><a href="../signup/index.html"> Sign Up</a></li>
+              <li class="active"><a href="../login/login.php"> <i class="ion-android-person"></i> Login </a></li>
+              <li><a href="../signup/signup.php"> Sign Up</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
