@@ -70,8 +70,19 @@
         <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 md-padding">
           <h1 class="align-center">LOGIN</h1>
           <br>
-
-          <form action="controller_login.php" method="post">
+<!-- cek pesan notifikasi -->
+<?php 
+	if(isset($_GET['pesan'])){
+		if($_GET['pesan'] == "gagal"){
+			echo "Login gagal! username dan password salah!";
+		}else if($_GET['pesan'] == "logout"){
+			echo "Anda telah berhasil logout";
+		}else if($_GET['pesan'] == "belum_login"){
+			echo "Anda harus login untuk mengakses halaman admin";
+		}
+	}
+	?>
+          <form action="cek_login.php" method="post">
  
                 <table class="table table-bordered">
                     <tr><td>USERNAME</td><td> <input type="text" name="username" placeholder="username" class="form-control"></td></tr>

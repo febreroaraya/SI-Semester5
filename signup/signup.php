@@ -1,16 +1,4 @@
-<?php
-// php script
-include("functions/controller_register.php");
-
-// html
-include("views/header.php");
-?>
-    <div class="row">
-        <div data-alert class="alert-box" style="display:none;">
-        Ini standard error
-        <a href="#" class="close">&times;</a>
-        </div>
-    </div>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -181,9 +169,7 @@ include("views/header.php");
         </div>
       </div>
     </div>
-    <?php
-include("views/footer.php");
-?>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../assets/js/jquery-latest.min.js"></script>
     
