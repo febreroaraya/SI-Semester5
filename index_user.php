@@ -28,6 +28,15 @@
     <![endif]-->
   </head>
   <body>
+  <?php 
+	session_start();
+ 
+	// cek apakah yang mengakses halaman ini sudah login
+	if($_SESSION['level']==""){
+		header("location:index.php?pesan=gagal");
+	}
+ 
+	?>
     <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
