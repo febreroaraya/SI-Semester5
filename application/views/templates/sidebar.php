@@ -11,7 +11,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Clothing Brand</div>
+                <div class="sidebar-brand-text mx-3">RDPVision</div>
             </a>
 
             <!-- Divider -->
@@ -29,25 +29,25 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Kategori
+                Category
             </div>
 
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Pria</span></a>
+                    <span>T-shirt</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Wanita</span></a>
+                    <span>Shirt</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Anak-Anak</span></a>
+                    <span>Jacket</span></a>
             </li>
 
             <!-- Divider -->
@@ -59,11 +59,7 @@
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
+            
 
         </ul>
         <!-- End of Sidebar -->
