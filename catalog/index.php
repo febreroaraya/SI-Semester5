@@ -46,13 +46,13 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="../assets/img/products/chrome-book-11.jpg" alt="HP Chromebook 11"/>
+                <img class="media-object" src="../assets/img/products/11.jpeg" alt="Sinners Saints"/>
               </a>
             </div>
             <div class="media-body">
-              <h2 class="h4 media-heading">HP Chromebook 11</h2>
-              <label>Laptops</label>
-              <p class="price">$199.99</p>
+              <h2 class="h4 media-heading">Sinners Saints</h2>
+              <label>T-Shirt</label>
+              <p class="price">IDR 199.99</p>
             </div>
             <div class="controls">
               <div class="input-group">
@@ -72,13 +72,13 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="../assets/img/products/chrome-book-14.jpg" alt="HP Chromebook 11"/>
+                <img class="media-object" src="../assets/img/products/12.jpeg" alt="Sin error"/>
               </a>
             </div>
             <div class="media-body">
-              <h2 class="h4 media-heading">HP Chromebook 14</h2>
-              <label>Laptops</label>
-              <p class="price">$209.99</p>
+              <h2 class="h4 media-heading">Sin Error or Evil</h2>
+              <label>T-Shirt</label>
+              <p class="price">IDR 199.99</p>
             </div>
             <div class="controls">
               <div class="input-group">
@@ -98,13 +98,13 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="../assets/img/products/ipad-air.jpg" alt="iPad Air"/>
+                <img class="media-object" src="../assets/img/products/13.jpeg" alt="redemption"/>
               </a>
             </div>
             <div class="media-body">
-              <h2 class="h4 media-heading">iPad Air</h2>
-              <label>Tablets</label>
-              <p class="price">$449.99</p>
+              <h2 class="h4 media-heading">Re-demp-tion</h2>
+              <label>T-Shirt</label>
+              <p class="price">IDR 149.99</p>
             </div>
             <div class="controls">
               <div class="input-group">
@@ -124,13 +124,13 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="../assets/img/products/mi-pad-2.jpg" alt="HP Chromebook 11"/>
+                <img class="media-object" src="../assets/img/products/15.jpeg" alt="Try to be a nice"/>
               </a>
             </div>
             <div class="media-body">
-              <h2 class="h4 media-heading">Mi Pad 2</h2>
-              <label>Tablets</label>
-              <p class="price">$199.99</p>
+              <h2 class="h4 media-heading">Try to be a nice person</h2>
+              <label>T-Shirt</label>
+              <p class="price">IDR 149.99</p>
             </div>
             <div class="controls">
               <div class="input-group">
@@ -150,13 +150,13 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <img class="media-object" src="../assets/img/products/lenovo-yoga.jpg" alt="Lenovo Yoga"/>
+                <img class="media-object" src="../assets/img/products/16.jpeg" alt="Lost bunny"/>
               </a>
             </div>
             <div class="media-body">
-              <h2 class="h4 media-heading">Lenovo Yoga</h2>
-              <label>Hybrid</label>
-              <p class="price">$199.99</p>
+              <h2 class="h4 media-heading">Lost Bunny</h2>
+              <label>T-Shirt</label>
+              <p class="price">IDR 199.99</p>
             </div>
             <div class="controls">
               <div class="input-group">
@@ -173,57 +173,7 @@
             </div>
           </div>
 
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object" src="../assets/img/products/surface-pro.jpg" alt="HP Chromebook 11"/>
-              </a>
-            </div>
-            <div class="media-body">
-              <h2 class="h4 media-heading">Surface Pro</h2>
-              <label>Hybrid</label>
-              <p class="price">$199.99</p>
-            </div>
-            <div class="controls">
-              <div class="input-group">
-                <span class="input-group-btn">
-                  <button class="btn btn-default btn-sm" type="button" data-action="minus"><i class="ion-minus-round"></i></button>
-                </span>
-                <input type="text" class="form-control input-sm" placeholder="Qty" value="1" readonly="">
-                <span class="input-group-btn">
-                  <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
-                </span>
-              </div><!-- /input-group -->
 
-              <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
-            </div>
-          </div>
-
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object" src="../assets/img/products/asus-transformer.jpg" alt="HP Chromebook 11"/>
-              </a>
-            </div>
-            <div class="media-body">
-              <h2 class="h4 media-heading">ASUS Transformer</h2>
-              <label>Hybrid</label>
-              <p class="price">$199.99</p>
-            </div>
-            <div class="controls">
-              <div class="input-group">
-                <span class="input-group-btn">
-                  <button class="btn btn-default btn-sm" type="button" data-action="minus"><i class="ion-minus-round"></i></button>
-                </span>
-                <input type="text" class="form-control input-sm" placeholder="Qty" value="1" readonly="">
-                <span class="input-group-btn">
-                  <button class="btn btn-default btn-sm" type="button" data-action="plus"><i class="ion-plus-round"></i></button>
-                </span>
-              </div><!-- /input-group -->
-
-              <a href="#remove"> <i class="ion-trash-b"></i> Remove </a>
-            </div>
-          </div>
 
         </div>
 
@@ -264,18 +214,18 @@
 
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="../home/index.html">Home</a></li>
-              <li class="active"><a href="../catalog/index.html">Catalog</a></li>
-              <li><a href="../blog/index.html">Blog</a></li>
-              <li><a href="../gallery/index.html">Gallery</a></li>
+              <li><a href="../home/index.php">Home</a></li>
+              <li class="active"><a href="../catalog/index.php">Catalog</a></li>
+              <li><a href="../blog/index.php">Blog</a></li>
+              <li><a href="../gallery/index.php">Gallery</a></li>
               <li class="dropdown">
                 <a href="../catalog/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="../catalog/product.html">Product</a></li>
-                  <li><a href="../cart/index.html">Cart</a></li>
-                  <li><a href="../checkout/index.html">Checkout</a></li>
-                  <li><a href="../faq/index.html">FAQ</a></li>
-                  <li><a href="../contacts/index.html">Contacts</a></li>
+                  <li><a href="../catalog/product.php">Product</a></li>
+                  <li><a href="../cart/index.php">Cart</a></li>
+                  <li><a href="../checkout/index.php">Checkout</a></li>
+                  <li><a href="../faq/index.php">FAQ</a></li>
+                  <li><a href="../contacts/index.php">Contacts</a></li>
                 </ul>
               </li>
             </ul>
@@ -286,6 +236,7 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav>
+    
     <hr class="offset-lg">
 
     <div class="container tags">
@@ -383,87 +334,43 @@
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/chrome-book-11.jpg" alt="HP Chromebook 11"/></a>
+              <a href="./"><img src="../assets/img/products/1.jpg" alt="Shirt"/></a>
 
               <div class="content">
-                <h1 class="h4">HP Chromebook 11</h1>
-                <p class="price">$199.99</p>
-                <label>Laptops</label>
+                <h1 class="h4">Shirt 1</h1>
+                <p class="price">IDR 249.99</p>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/chrome-book-14.jpg" alt="HP Chromebook 14"/></a>
+              <a href="./"><img src="../assets/img/products/2.jpg" alt="Shirt2"/></a>
 
               <div class="content">
-                <h1 class="h4">HP Chromebook 14</h1>
-                <p class="sale">$209.99</p>
+                <h1 class="h4">Shirt 2</h1>
+                <p class="sale">IDR 209.99</p>
                 <p class="price through">$249.99</p>
-                <label>Laptops</label>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/chrome-book-asus.jpg" alt="HP Chromebook 14"/></a>
+              <a href="./"><img src="../assets/img/products/5.jpg" alt="Shirt3"/></a>
 
               <div class="content">
-                <h1 class="h4">Asus Chromebook</h1>
-                <p class="price">$299.99</p>
-                <label>Laptops</label>
+                <h1 class="h4">Shirt 3</h1>
+                <p class="price">IDR 249.99</p>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
-                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
-              </div>
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 product">
-              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/ipad-air.jpg" alt="iPad Air"/></a>
-
-              <div class="content">
-                <h1 class="h4">iPad Air</h1>
-                <p class="price">$449.99</p>
-                <label>Tablets</label>
-
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
-                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 product">
-              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/ipad-mini.jpg" alt="iPad Mini"/></a>
-
-              <div class="content">
-                <h1 class="h4">iPad Mini</h1>
-                <p class="price">$399.99</p>
-                <label>Tablets</label>
-
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
-                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 product">
-              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/mi-pad-2.jpg" alt="Mi Pad 2/"></a>
-
-              <div class="content">
-                <h1 class="h4">Mi Pad 2</h1>
-                <p class="sale">$199.99</p>
-                <p class="price through">$249.99</p>
-                <label>Tablets</label>
-
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
@@ -471,42 +378,86 @@
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/surface-pro.jpg" alt="Surface Pro"/></a>
+              <a href="./"><img src="../assets/img/products/8.jpg" alt="Shirt"/></a>
 
               <div class="content">
-                <h1 class="h4">Surface Pro</h1>
-                <p class="price">$199.99</p>
-                <label>Hybrid</label>
+                <h1 class="h4">Shirt 4</h1>
+                <p class="price">IDR 249.99</p>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/lenovo-yoga.jpg" alt="Lenovo Yoga"/></a>
+              <a href="./"><img src="../assets/img/products/9.jpg" alt="Shirt"/></a>
 
               <div class="content">
-                <h1 class="h4">Lenovo Yoga</h1>
-                <p class="price">$199.99</p>
-                <label>Hybrid</label>
+                <h1 class="h4">Shirt 5</h1>
+                <p class="price">IDR 249.99</p>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
 
             <div class="col-sm-6 col-md-4 product">
               <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
-              <a href="./"><img src="../assets/img/products/asus-transformer.jpg" alt="ASUS Transformer"/></a>
+              <a href="./"><img src="../assets/img/products/10.jpg" alt="Shirt"></a>
 
               <div class="content">
-                <h1 class="h4">ASUS Transformer</h1>
-                <p class="price">$199.99</p>
-                <label>Hybrid</label>
+                <h1 class="h4">Shirt 6</h1>
+                <p class="sale">IDR 199.99</p>
+                <p class="price through">IDR 249.99</p>
+                <label>Shirt</label>
 
-                <a href="../catalog/product.html" class="btn btn-link"> Details</a>
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
+                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
+              </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4 product">
+              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
+              <a href="./"><img src="../assets/img/products/11.jpeg" alt="T-Shirt"/></a>
+
+              <div class="content">
+                <h1 class="h4">Sinners Saints</h1>
+                <p class="price">IDR 199.99</p>
+                <label>T-Shirt</label>
+
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
+                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 product">
+              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
+              <a href="./"><img src="../assets/img/products/12.jpeg" alt="T-Shirt"/></a>
+
+              <div class="content">
+                <h1 class="h4">Sin Error or Evil</h1>
+                <p class="price">IDR 199.99</p>
+                <label>T-Shirt</label>
+
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
+                <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 product">
+              <a href="#favorites" class="favorites" data-favorite="inactive"><i class="ion-ios-heart-outline"></i></a>
+              <a href="./"><img src="../assets/img/products/13.jpeg" alt="T-Shirt"/></a>
+
+              <div class="content">
+                <h1 class="h4">Re-demp-tion</h1>
+                <p class="price">IDR 149.99</p>
+                <label>T-Shirt</label>
+
+                <a href="../catalog/product.php" class="btn btn-link"> Details</a>
                 <button class="btn btn-primary btn-rounded btn-sm"> <i class="ion-bag"></i> Add to cart</button>
               </div>
             </div>
