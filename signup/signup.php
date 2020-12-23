@@ -1,3 +1,39 @@
+<?php
+          //after clik
+if(isset($_POST['register_submit'])) {
+
+// koneksi sql
+$connect = mysqli_connect('localhost','root','','store')
+or die(mysqli_connect_error());
+
+// tampung value
+$nama_lengkap = mysqli_real_escape_string($connect, trim($_POST['nama_lengkap']));
+$username = mysqli_real_escape_string($connect, trim($_POST['username']));
+$password = mysqli_real_escape_string($connect, trim($_POST['password']));
+$konfirmasi = mysqli_real_escape_string($connect, trim($_POST['konfirmasi_password']));
+
+// cek apakah konfirmasi password benar
+if($password != $konfirmasi) {
+//radirect
+    header('location: login.php?konfirmasipassword-failed');
+} else { 
+    // proses insert/register
+    $sql = '
+        insert into user
+        values(
+            "",
+            "'.$nama_lengkap.'",
+            "'.$username.'",
+            "'.$password.'"
+)
+';
+mysqli_query($connect, $sql);
+header("location: login.php?pesan=sukses");
+
+}
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,39 +109,38 @@
           <h1 class="align-center">BUAT AKUN</h1>
           <br>
 
-          <form class="join" action="index.php" method="post">
+          <form class="join" action="" method="post">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
-                  <input type="text" name="name" value="" placeholder="Nama" required="" class="form-control" /><br>
+                  <label for="nama">Nama Lengkap</label>
+                  <input type="text" class="form-control" name="nama_lengkap" required><br>
                 </div>
+                
                 <div class="col-sm-12">
-                  <input type="text" name="phone" value="" placeholder="Nomor Telepon" required="" class="form-control" /><br>
-                </div>
+                <label for="nama">E-mail</label>
+                  <input type="email" class="form-control" name="username" required><br>
+                  </div>
                 <div class="col-sm-12">
-                  <input type="email" name="email" value="" placeholder="E-mail" required="" class="form-control" /><br>
-                </div>
-                <div class="col-sm-12">
-                  <input type="password" name="password" value="" placeholder="Password" required="" class="form-control" /><br>
-                </div>
-                <div class="col-sm-12">
-                  <input type="password" name="password-confirm" value="" placeholder="Konfirmasi Password" required="" class="form-control" /><br>
-                </div>
-                <div class="col-sm-12">
-                  <input type="password" name="alamat" value="" placeholder="Alamat" required="" class="form-control" /><br>
-                </div>
-                <div class="col-sm-12">
-                  <input type="password" name="pos" value="" placeholder="Kode Pos" required="" class="form-control" /><br>
-                </div>
+                <label for="nama">Password</label>
+                  <input type="password" class="form-control" name="password" required><br>
+                  </div>
+                  <div class="col-sm-12">
+                <label for="nama">Konfirmasi Password</label>
+                  <input type="password" class="form-control" name="konfirmasi_password" required><br>
+                  </div>
+                
               </div>
             </div>
             <br>
 
-            <button type="submit" class="btn btn-primary">Daftar</button>
+            <div class="col-sm-12">
+            <input type="submit" name="register_submit" class="btn btn-succes" required><br>
 
             <br><br>
         
           </form>
+          
 
           <br class="hidden-sm hidden-md hidden-lg">
         </div>
