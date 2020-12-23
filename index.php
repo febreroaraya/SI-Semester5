@@ -1,343 +1,315 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title> RDPVision &middot; Clothing Brand</title>
+<?php
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2019, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
+ * @link	https://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
 
-    <meta name="description" content="Bootstrap template for you store - E-Commerce Bootstrap Template">
-    <meta name="keywords" content="unistore, e-commerce bootstrap template, premium e-commerce bootstrap template, premium bootstrap template, bootstrap template, e-commerce, bootstrap template, sunrise digital">
-    <meta name="author" content="Sunrise Digital">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/carousel.css" rel="stylesheet">
-    <link href="assets/css/carousel-recommendation.css" rel="stylesheet">
-    <link href="assets/ionicons-2.0.1/css/ionicons.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100,300' rel='stylesheet' type='text/css'>
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="./"> <i class="ion-cube"></i> RDPVision</a>
-          </div>
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
 
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="./">Home</a></li>
-              <li><a href="./catalog/">Catalog</a></li>
-              <li><a href="./blog/">Blog</a></li>
-              <li><a href="./gallery/">Gallery</a></li>
-              <li class="dropdown">
-                <a href="./catalog/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="./catalog/product.html">Product</a></li>
-                  <li><a href="./cart/">Cart</a></li>
-                  <li><a href="./checkout/">Checkout</a></li>
-                  <li><a href="./faq/">FAQ</a></li>
-                  <li><a href="./contacts/">Contacts</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="../SI-Semester5/login/login.php"> <i class="ion-android-person"></i> Login </a></li>
-              <li><a href="../SI-Semester5/signup/signup.php"> Sign Up</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-    </nav>
-    <header>
-      <div class="carousel" data-count="3" data-current="2">
-        <!-- <button class="btn btn-control"></button> -->
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
 
-        <div class="items">
-          <div class="item" data-marker="1">
-            <img src="../SI-Semester5/assets/img/carousel/3.jpg" alt="Background" class="background"/>
+/*
+ *---------------------------------------------------------------
+ * SYSTEM DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" directory.
+ * Set the path if it is not in the same directory as this file.
+ */
+	$system_path = 'system';
 
-            <div class="content">
-              <div class="outside-content">
-                <div class="inside-content">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-sm-12 align-center">
-                        <h1>New amazing T-Shirt</h1>
-                        <p>Provide lightweight and powerull</p>
-                        <a href="../catalog/">More ></a>
-                        <br><br>
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item active" data-marker="2">
-            <img src="../SI-Semester5/assets/img/carousel/4.jpg" alt="Background" class="background"/>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * directory than the default one you can set its name here. The directory
+ * can also be renamed or relocated anywhere on your server. If you do,
+ * use an absolute (full) server path.
+ * For more info please see the user guide:
+ *
+ * https://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
 
-            <div class="content">
-              <div class="outside-content">
-                <div class="inside-content">
-                  <div class="container">
-                    <div class="row">
-                      
-                      <div class="col-sm-12 align-center">
-                        <h1>BIG SALE</h1>
-                        <p>CHINO PANTS SALE</p>
-                        <p>Discount Up To 50%</p>
-                        <a href="../catalog/">More ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-marker="3">
-            <img src="../SI-Semester5/assets/img/carousel/1.jpg" alt="Background" class="background"/>
-
-            <div class="content">
-              <div class="outside-content">
-                <div class="inside-content">
-                  <div class="container">
-                    <div class="row">
-                      
-                      <div class="col-sm-4 align-left">
-                        <br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
-                        <br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
-                        <h1>Luxury T-Shirt</h1>
-                        <br>
-                        
-                        <p>
-                          Luxury watches, business tablets and 3D touch: How Apple plans to stay ahead in mobile.
-                          When it comes to the brand’s latest iPhones, the biggest excitement isn’t focused on the addition of a rose gold coloured device but the new 3D touch sensors.
-                        </p>
-                        <a href="../SI-Semester5/blog/item-photo.html">More ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <ul class="markers">
-          <li data-marker="1"><img src="../SI-Semester5/assets/img/carousel/bckg.jpg" alt="Background"/></li>
-          <li data-marker="2"><img src="../SI-Semester5/assets/img/carousel/bckg.jpg" alt="Background"/></li>
-          <li data-marker="3"><img src="../SI-Semester5/assets/img/carousel/bckg.jpg" alt="Background"/></li>
-        </ul>
-      </div>
-    </header>
-    <br><br>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 align-center">
-          <a href="../blog/">
-            <img src="../SI-Semester5/assets/img/tiles/3.jpg" alt="Blog" class="image"/>
-          </a>
-          <br><br>
-
-          <a href="../blog/">Blog headlines</a>
-        </div>
-        <div class="col-sm-3 align-center">
-          <a href="#video" data-gallery="#video" data-source="vimeo" data-id="110691368" data-id="110691368" data-title="Apple iPad Air" data-description="So capable, you won’t want to put it down. So thin and light, you won’t have to.">
-            <img src="../SI-Semester5/assets/img/tiles/4.jpg" alt="New devices" class="image"/>
-          </a>
-          <br><br>
-
-          <a href="#video" data-gallery="#video" data-source="vimeo" data-id="110691368" data-title="Apple iPad Air" data-description="So capable, you won’t want to put it down. So thin and light, you won’t have to.">New T-Shirt</a>
-        </div>
-        <div class="col-sm-3 align-center">
-          <a href="#video" data-gallery="#video" data-source="youtube" data-id="6g-ZIm0wge4" data-title="Best New Dell Laptops" data-description="Best of dell's laptops that you can consider buying in 2016. 4 Laptops are featured in the video and all of them has equal importance and there is no order that #1 is better than #2">
-            <img src="../SI-Semester5/assets/img/tiles/6.jpg" alt="Del XPS" class="image"/>
-          </a>
-          <br><br>
-
-          <a href="#video" data-gallery="#video" data-source="youtube" data-id="6g-ZIm0wge4" data-title="Best New Dell Laptops" data-description="Best of dell's laptops that you can consider buying in 2016. 4 Laptops are featured in the video and all of them has equal importance and there is no order that #1 is better than #2">Brand New</a>
-        </div>
-        <div class="col-sm-3 align-center">
-          <a href="../blog/">
-            <img src="../SI-Semester5/assets/img/tiles/7.jpg" alt="Gallery" class="image"/>
-          </a>
-          <br><br>
-          
-          <a href="../blog/">Products gallery</a>
-        </div>
-      </div>
-    </div>
-    <br><br>
-
-    <footer>
-      
-
-      <div class="subscribe">
-        <div class="container align-center">
-            <hr class="offset-md">
-
-            
-            <hr class="offset-lg">
-            <hr class="offset-md">
-
-            <div class="social">
-              <a href="#"><i class="ion-social-facebook"></i></a>
-              <a href="#"><i class="ion-social-twitter"></i></a>
-              <a href="#"><i class="ion-social-instagram-outline"></i></a>
-            </div>
+/*
+ *---------------------------------------------------------------
+ * VIEW DIRECTORY NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view directory out of the application
+ * directory, set the path to it here. The directory can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application directory.
+ * If you do move this, use an absolute (full) server path.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
 
 
-            <hr class="offset-md">
-            <hr class="offset-md">
-        </div>
-      </div>
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" directory.  Leave blank
+	// if your controller is not in a sub-directory within the "controllers" one
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
 
 
-      <div class="container">
-        <hr class="offset-md">
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
-        <div class="row menu">
-          <div class="col-sm-3 col-md-2">
-            <h1 class="h4">Information <i class="ion-plus-round hidden-sm hidden-md hidden-lg"></i> </h1>
 
-            <div class="list-group">
-              <a href="#" class="list-group-item">About</a>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-2">
-            <h1 class="h4">Products <i class="ion-plus-round hidden-sm hidden-md hidden-lg"></i> </h1>
 
-            <div class="list-group">
-              <a href="#" class="list-group-item">T-shirt</a>
-              <a href="#" class="list-group-item">Shirt</a>
-              <a href="#" class="list-group-item">Jacket</a>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-2">
-            <h1 class="h4">Support <i class="ion-plus-round hidden-sm hidden-md hidden-lg"></i> </h1>
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
 
-            <div class="list-group">
-              <a href="#" class="list-group-item">Returns</a>
-              <a href="#" class="list-group-item">FAQ</a>
-              <a href="#" class="list-group-item">Contacts</a>
-            </div>
-          </div>
-         
-          <div class="col-sm-3 col-md-5 col-md-offset-1 align-right hidden-sm hidden-xs">
-            <h1 class="h4">RDPVision</h1>
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
 
-              <address>
-                Jl. Tebet Utara II F<br>
-                Tebet Barat, Jakarta<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-              </address>
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
 
-              <address>
-                <strong>Support</strong><br>
-                <a href="mailto:#">sup@example.com</a>
-              </address>
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = strtr(
+			rtrim($system_path, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		).DIRECTORY_SEPARATOR;
+	}
 
-          </div>
-        </div>
-      </div>
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
 
-      <hr>
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-9 payments">
-            
-            <br>
+	// Path to the system directory
+	define('BASEPATH', $system_path);
 
-          </div>
-          <div class="container align-center">
-            <hr class="offset-sm hidden-sm">
-            <hr class="offset-sm">
-            <p>RDPVision © 2020 <br> Designed By <a href="#" target="_blank">Indocraft</a></p>
-            <hr class="offset-lg visible-xs">
-          </div>
-        </div>
-      </div>
-    </footer>
+	// Path to the front controller (this file) directory
+	define('FCPATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 
-    <!-- Modal -->
-    <div class="modal fade" id="Modal-ForgotPassword" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ion-android-close"></i></span></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h4 class="modal-title">Forgot Your Password?</h4>
-                  <br>
+	// Name of the "system" directory
+	define('SYSDIR', basename(BASEPATH));
 
-                  <form class="join" action="index.php" method="post">
-                    <input type="email" name="email" value="" placeholder="E-mail" required="" class="form-control" />
-                    <br>
+	// The path to the "application" directory
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+		else
+		{
+			$application_folder = strtr(
+				rtrim($application_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+	{
+		$application_folder = BASEPATH.strtr(
+			trim($application_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
 
-                    <button type="submit" class="btn btn-primary btn-sm">Continue</button>
-                    <a href="#Sign-In" data-action="Sign-In">Back ></a>
-                  </form>
-                </div>
-                <div class="col-sm-6">
-                  <br><br>
-                  <p>
-                    Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-          </div>
-        </div>
-      </div>
-    </div>
+	define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
 
-    <div class="modal fade" id="Modal-Gallery" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ion-android-close"></i></span></button>
-            <h4 class="modal-title">Title</h4>
-          </div>
-          <div class="modal-body">
-          </div>
-          <div class="modal-footer">
-          </div>
-        </div>
-      </div>
-    </div>
+	// The path to the "views" directory
+	if ( ! isset($view_folder[0]) && is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.'views';
+	}
+	elseif (is_dir($view_folder))
+	{
+		if (($_temp = realpath($view_folder)) !== FALSE)
+		{
+			$view_folder = $_temp;
+		}
+		else
+		{
+			$view_folder = strtr(
+				rtrim($view_folder, '/\\'),
+				'/\\',
+				DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+			);
+		}
+	}
+	elseif (is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+	{
+		$view_folder = APPPATH.strtr(
+			trim($view_folder, '/\\'),
+			'/\\',
+			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
+		);
+	}
+	else
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+		exit(3); // EXIT_CONFIG
+	}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery-latest.min.js"></script>
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/core.js"></script>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/carousel-recommendation.js"></script>
-    
-  </body>
-</html>
+	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
