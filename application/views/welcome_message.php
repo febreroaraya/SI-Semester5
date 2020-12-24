@@ -36,7 +36,7 @@
                     <span class="badge bg-success mb-3">Rp. <?php echo $brg->harga ?></span><br>
                     <?php echo anchor('Welcome/tambah_ke_keranjang/'.$brg->id_brg,'<div class="btn btn-sm btn-primary">Add to cart</div>') ?>
                     <a href="#" class="btn btn-sm btn-success">Detail</a>
-                </div>
+                </div> 
             </div>
 
         <?php endforeach; ?>
