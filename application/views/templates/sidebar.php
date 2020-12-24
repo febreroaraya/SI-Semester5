@@ -118,6 +118,14 @@
                                 </form>
                             </div>
                         </li>
+                        <div class="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <?php $keranjang = 'Keranjang Belanja: '.$this->cart->total_items(). 'items' ?>
+                                    <?php echo $keranjang ?>
+                                </li>
+                            </ul>
+                        </div>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
