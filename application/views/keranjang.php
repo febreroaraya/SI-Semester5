@@ -29,4 +29,12 @@
     
     </table>
 
+    <div align="right">
+            <a href="<?php echo base_url('welcome/hapus_keranjang') ?>">
+            <div class="btn btn-sm btn-danger">Hapus Keranjang</div></a>
+            <a href="<?php echo base_url('index.php') ?>">
+            <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div></a>
+            <a href="<?php echo base_url('welcome/pembayaran') ?>">
+            <div class="btn btn-sm btn-success">Pembayaran</div></a>
+    </div>
 </div>
