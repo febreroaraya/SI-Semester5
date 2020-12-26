@@ -18,6 +18,12 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('admin/invoice')?>">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Invoice</span></a>
+
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url('admin/welcome_admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -31,7 +37,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/invoices') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
                     <i class="fas fa-fw fa-file-invoice"></i>
                     <span>Invoices</span></a>
             </li>
