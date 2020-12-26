@@ -63,7 +63,7 @@ class Welcome extends CI_Controller {
 			$this->load->view('proses_pesanan');
 			$this->load->view('templates/footer');
 		}else{
-			echo "maaf, Pesanan Anda Gagal diproses!";
+			echo "Maaf, Pesanan Anda Gagal diproses!";
 		}
 	}
 }
