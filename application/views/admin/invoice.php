@@ -13,11 +13,11 @@
 
     <?php foreach ($invoice as $inv): ?>
     <tr>
-        <td><?php echo $inv->id ?>></td>
-        <td><?php echo $inv->nama ?>></td>
-        <td><?php echo $inv->alamat ?>></td>
-        <td><?php echo $inv->tgl_pesan ?>></td>
-        <td><?php echo $inv->batas_bayar ?>></td>
+        <td><?php echo $inv->id ?></td>
+        <td><?php echo $inv->nama ?></td>
+        <td><?php echo $inv->alamat ?></td>
+        <td><?php echo $inv->tgl_pesan ?></td>
+        <td><?php echo $inv->batas_bayar ?></td>
         <td><div class="btn btn-sm btn-primary">Detail </div></td>
     </tr>
 
