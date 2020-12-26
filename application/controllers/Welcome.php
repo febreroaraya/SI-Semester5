@@ -44,4 +44,26 @@ class Welcome extends CI_Controller {
 		$this->load->view('keranjang');
 		$this->load->view('templates/footer');
 	}
+	public function hapus_keranjang(){
+		$this->cart->destroy();
+		redirect('../');
+	}
+	public function pembayaran(){
+		$this->load->view('templates/header');
+		$this->load->view('templates/sidebar');
+		$this->load->view('pembayaran');
+		$this->load->view('templates/footer');
+	}
+	public function proses_pesanan(){
+		$is_processed = $this->model_invoice->index();
+		if($is_processed){
+			$this->cart->destroy();
+			$this->load->view('templates/header');
+			$this->load->view('templates/sidebar');
+			$this->load->view('proses_pesanan');
+			$this->load->view('templates/footer');
+		}else{
+			echo "Maaf, Pesanan Anda Gagal diproses!";
+		}
+	}
 }
