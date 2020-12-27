@@ -49,7 +49,11 @@
             </div>
             <div class="form-group">
                 <label>Kategori</label>
-                <input type="text" name="kategori" class="form-control"></input>
+                <select class="form-control" name="kategori">
+                  <option>Tshirt</option>
+                  <option>Shirt</option>
+                  <option>Jacket</option>
+                </select>
             </div>
             <div class="form-group">
                 <label>Harga</label>

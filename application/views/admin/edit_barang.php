@@ -15,7 +15,11 @@
         </div>
         <div class="for-group">
             <label>Kategori</label>
-            <input type="text" name="kategori" class="form-control" value="<?php echo $brg->kategori ?>">
+            <select class="form-control" name="kategori" value="<?php echo $brg->kategori ?>">
+                  <option>Tshirt</option>
+                  <option>Shirt</option>
+                  <option>Jacket</option>
+                </select> 
         </div>
         <div class="for-group">
             <label>Harga</label>

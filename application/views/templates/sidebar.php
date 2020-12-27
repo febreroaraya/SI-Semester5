@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?php echo base_url('Welcome') ?> ">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -32,19 +32,19 @@
                 Category
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('Kategori/tshirt') ?> ">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>T-shirt</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('Kategori/shirt') ?> ">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Shirt</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="<?php echo base_url('Kategori/jacket') ?> ">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Jacket</span></a>
             </li>
