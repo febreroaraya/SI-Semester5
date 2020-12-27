@@ -1,5 +1,5 @@
 <?php 
-    class registrasi extends CI_Controller{
+    class Registrasi extends CI_Controller{
         public function index()
         {
             $this->form_validation->set_rules('nama','Nama','required', [
