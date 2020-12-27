@@ -2,6 +2,22 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
+	public function __construct(){
+        parent::__construct();
+            if($this->session->userdata('role_id') != '2'){
+                $this->session->set_flashdata('pesan','
+                <div class="alert alert-danger
+                alert-dismissible fade show"
+                role="alert">
+            Anda Belum Login
+            <button type="button" class="close"
+                data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>');
+        redirect('auth/login');
+            }
+    }
 
 	/**
 	 * Index Page for this controller.
@@ -18,14 +34,7 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$data['barang'] = $this->model_barang->tampil_data()->result();
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		$this->load->view('welcome_message', $data);
-		$this->load->view('templates/footer');
-	}
+	
 	public function tambah_ke_keranjang($id){
 		$barang = $this->model_barang->find($id);
 		$data = array(
@@ -36,7 +45,7 @@ class Welcome extends CI_Controller {
 	);
 	
 	$this->cart->insert($data);
-	redirect('Welcome');
+	redirect('dashboard');
 	}
 	public function detail_keranjang(){
 		$this->load->view('templates/header');
@@ -46,7 +55,7 @@ class Welcome extends CI_Controller {
 	}
 	public function hapus_keranjang(){
 		$this->cart->destroy();
-		redirect('../');
+		redirect('dashboard');
 	}
 	public function pembayaran(){
 		$this->load->view('templates/header');

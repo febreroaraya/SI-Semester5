@@ -43,12 +43,16 @@ class Auth extends CI_Controller {
                 switch($auth->role_id){
                     case 1 :    redirect('admin/Welcome_admin');
                                 break;
-                    case 2 :    redirect('Welcome');
+                    case 2 :    redirect('dashboard ');
                                 break;
                     default : break;
                 }
             }
         }
+    }
+    public function logout(){
+        $this->session->sess_destroy();
+        redirect('auth/login');
     }
 
 }
