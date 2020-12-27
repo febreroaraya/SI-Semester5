@@ -22,7 +22,7 @@
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address..." name="username">
+                                                placeholder="Username" name="username">
                                                 <?php echo form_error('username', '<div class="text-danger small ml-2">','</div>'); ?>
                                         </div>
                                         <div class="form-group">
@@ -37,7 +37,7 @@
                                     <hr>
                                     
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Belum Punya Akun? Daftar</a>
+                                        <a class="small" href="<?php echo base_url('registrasi/index'); ?>">Belum Punya Akun? Daftar</a>
                                     </div>
                                 </div>
                             </div>
