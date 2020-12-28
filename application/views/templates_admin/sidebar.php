@@ -8,8 +8,8 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-home"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">ADMIN</div>
             </a>
@@ -24,7 +24,7 @@
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Invoice</span></a>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('admin/Welcome_admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>

@@ -39,6 +39,10 @@
                                     <div class="text-center">
                                         <a class="small" href="<?php echo base_url('registrasi/index'); ?>">Belum Punya Akun? Daftar</a>
                                     </div>
+                                    <br>
+                                    <div class="text-center">
+                                        <a class="small" href="<?php echo base_url('../SI-Semester5'); ?>">Kembali</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
